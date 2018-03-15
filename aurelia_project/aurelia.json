@@ -1,0 +1,112 @@
+{
+  "name": "aurelia-interact-utils",
+  "type": "project:plugin",
+  "transpiler": {
+    "id": "babel",
+    "displayName": "Babel",
+    "fileExtension": ".js",
+    "source": "src/**/*.js",
+    "outputs": {
+      "amd": {
+        "compileOptions": {
+          "presets": [
+            [
+              "es2015",
+              {
+                "loose": true
+              }
+            ],
+            "stage-1"
+          ],
+          "plugins": [
+            "syntax-flow",
+            "transform-decorators-legacy",
+            "transform-flow-strip-types",
+            "transform-es2015-modules-amd"
+          ]
+        }
+      },
+      "commonjs": {
+        "compileOptions": {
+          "presets": [
+            [
+              "es2015",
+              {
+                "loose": true
+              }
+            ],
+            "stage-1"
+          ],
+          "plugins": [
+            "syntax-flow",
+            "transform-decorators-legacy",
+            "transform-flow-strip-types",
+            "transform-es2015-modules-commonjs"
+          ]
+        }
+      },
+      "system": {
+        "compileOptions": {
+          "presets": [
+            [
+              "es2015",
+              {
+                "loose": true
+              }
+            ],
+            "stage-1"
+          ],
+          "plugins": [
+            "syntax-flow",
+            "transform-decorators-legacy",
+            "transform-flow-strip-types",
+            "transform-es2015-modules-systemjs"
+          ]
+        }
+      },
+      "es2015": {
+        "compileOptions": {
+          "presets": [
+            "stage-1"
+          ],
+          "plugins": [
+            "syntax-flow",
+            "transform-decorators-legacy",
+            "transform-flow-strip-types"
+          ]
+        }
+      }
+    }
+  },
+  "markupProcessor": {
+    "id": "none",
+    "displayName": "None",
+    "fileExtension": ".html",
+    "source": "src/**/*.html"
+  },
+  "cssProcessor": {
+    "id": "none",
+    "displayName": "None",
+    "fileExtension": ".css",
+    "source": "src/**/*.css"
+  },
+  "editor": {
+    "id": "vscode",
+    "displayName": "Visual Studio Code"
+  },
+  "unitTestRunner": {
+    "id": "karma",
+    "displayName": "Karma"
+  },
+  "build": {
+    "copyFiles": {}
+  },
+  "paths": {
+    "root": "src",
+    "output": "dist"
+  },
+  "testFramework": {
+    "id": "jasmine",
+    "displayName": "Jasmine"
+  }
+}
