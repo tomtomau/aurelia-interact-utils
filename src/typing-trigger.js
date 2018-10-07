@@ -1,3 +1,5 @@
+import { DOM } from 'aurelia-pal';
+
 const DEFAULT_DEBOUNCE = 500;
 
 export class TypingTriggerCustomAttribute {
@@ -42,7 +44,7 @@ export class TypingTriggerCustomAttribute {
       }
 
       this._timeout = window.setTimeout(() => {
-        let event = new CustomEvent('typing', { bubbles: true });
+        let event = DOM.createCustomEvent('typing', { bubbles: true });
 
         this.element.dispatchEvent(event);
       }, this._debounceTime);
