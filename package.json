@@ -1,7 +1,7 @@
 {
   "name": "aurelia-interact-utils",
   "description": "A collection of interaction utilities for Aurelia, such as triggers for typing, return, escapeblur",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/tomtomau/aurelia-interact-utils.git"
