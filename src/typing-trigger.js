@@ -25,8 +25,13 @@ export class TypingTriggerCustomAttribute {
           return;
         }
 
-        // @TODO: Explain keycodes
-        if (code > 35) {
+        // Most keys below 46 we want to ignore because they're shift, end,
+        // home, and the like. 46 is delete, above 48 are alphanumeric.
+        // We also have a few codes below 46 that we care about, such as
+        // backspace and spacebar.
+        // See: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
+        let specialCodes = [8, 32];
+        if (code >= 46 || specialCodes.indexOf(code) != -1) {
           this._triggerTyping();
         }
       });
