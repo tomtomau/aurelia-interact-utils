@@ -1,7 +1,7 @@
 {
   "name": "aurelia-interact-utils",
   "description": "A collection of interaction utilities for Aurelia, such as triggers for typing, return, escapeblur",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/tomtomau/aurelia-interact-utils.git"
@@ -44,7 +44,7 @@
     "eslint": "latest",
     "expose-loader": "0.7.3",
     "file-loader": "0.11.2",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "^4.0.0",
     "gulp-babel": "^6.1.2",
     "gulp-changed-in-place": "^2.0.3",
     "gulp-eslint": "^2.0.0",
